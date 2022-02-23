@@ -23,7 +23,7 @@ namespace BT
 {
 BehaviorTreeFactory::BehaviorTreeFactory()
 {
-    registerNodeType<FallbackNode>("Fallback");
+    registerNodeType<FallbackNode>("Selector");
     registerNodeType<SequenceNode>("Sequence");
     registerNodeType<SequenceStarNode>("SequenceStar");
     registerNodeType<ParallelNode>("Parallel");
