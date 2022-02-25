@@ -1,0 +1,32 @@
+##################################
+# Windows 빌드
+
+1. setup.bat 실행
+
+2. behaviortree_cpp_v3.sln 실행
+
+3. 프로젝트 속성 변경
+	3.1. 대상 이름 변경(d제거)
+	- 구성 속성 - 일반 - 대상 이름 - behaviortree_cpp_v3
+	
+	3.2. 런타임 라이브러리 변경
+	- 구성 속성 - C/C++ - 코드 생성 - 런타임 라이브러리 - 다중 스레드 디버그(/MTd)
+	
+4. 빌드 후
+build\bin\Debug\behaviortree_cpp_v3.lib, pdb 를 
+게임프로젝트\share\lib\ 에 복사
+
+##################################
+# Linux 빌드
+
+1. 터미널 열기
+
+2. ./setup.sh 실행
+
+3. cd build
+
+4. make
+
+5. 빌드 후
+build\bin\libbehaviortree_cpp_v3.a 를
+게임프로젝트\share\lib\ 에 복사
